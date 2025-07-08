@@ -6,8 +6,8 @@ const fp =
   typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : ({
-        l10ns: {},
-      } as FlatpickrFn);
+      l10ns: {},
+    } as FlatpickrFn);
 
 export const Tajik: CustomLocale = {
   weekdays: {
@@ -54,7 +54,8 @@ export const Tajik: CustomLocale = {
   },
   firstDayOfWeek: 1,
   ordinal: function () {
-    return ""; // Порядковые суффиксы в таджикском не используются в датах
+    // Порядковые суффиксы в таджикском не используются в датах
+    return "";
   },
   rangeSeparator: " то ",
   weekAbbreviation: "Ҳафта",
